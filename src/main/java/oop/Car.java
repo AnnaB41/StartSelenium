@@ -1,3 +1,5 @@
+package oop;
+
 public class Car {
 
     // characteristics - fields - properties - data members
@@ -18,7 +20,9 @@ public class Car {
     // 1. object non static
 
     public void toDrive(){
+
         System.out.println("Driving");
+        anyPrivateMethod();
     }
 
     public void toStop(){
@@ -132,7 +136,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "oop.Car{" +
                 "engine=" + engine +
                 ", year=" + year +
                 ", electric=" + electric +
@@ -142,4 +146,8 @@ public class Car {
                 ", price=" + price +
                 '}';
     }
+private void anyPrivateMethod(){
+    System.out.println("private method");
+}
+
 }

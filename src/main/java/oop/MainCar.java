@@ -1,3 +1,5 @@
+package oop;
+
 public class MainCar {
 
     public static void main(String[] args) {
@@ -37,6 +39,37 @@ public class MainCar {
       //  System.out.println(sc1);
 
         Truck t1 = new Truck();
+
+        Formula1 f = new Formula1();
+
+        f.sendSOS();
+        f.toSale();
+
+        Car c5 = new Formula1();
+
+        Movable m1 = new Formula1();
+
+
+        t1.toDrive();
+        sc1.toDrive();
+        f.toDrive();
+
+        Car[] cars = new Car[3];
+        cars[0] = t1;
+        cars[1] = sc1;
+        cars[2] = f;
+
+        for(Car car : cars){
+            car.toDrive();
+        }
+
+        Movable[] arr = new Movable[2];
+        arr[0] = new Formula1();
+        arr[1] = new Truck();
+
+        for(Movable mov : arr){
+            mov.sendSOS();
+        }
 
 
 

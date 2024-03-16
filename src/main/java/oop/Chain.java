@@ -1,3 +1,5 @@
+package oop;
+
 public class Chain {
 
     public static void main(String[] args) {
