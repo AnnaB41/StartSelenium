@@ -26,4 +26,16 @@ public class TableTest {
 
     }
 
+    @Test
+    public void homeWork(){
+        System.out.println(
+                wd.findElements(
+                        By.xpath("//*[@id='customers']//tr")).size());
+        System.out.println(
+                wd.findElements(
+                        By.xpath("//*[@id='customers']//th")).size());
+        wd.findElement(By.cssSelector("#customers tr:nth-child(3)"));
+        wd.findElement(By.cssSelector("#customers td:last-child"));
+    }
+
 }
